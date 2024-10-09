@@ -27,7 +27,7 @@ const DropdownItem = ({ children , items }) => {
       </div>
       
       {/* dropdown menu  mobile*/}
-      <div className={`w-full transition-all duration-300 overflow-hidden ${hover ? 'max-h-96' : 'max-h-0'}`}><DropdownMenu items={items} /></div>
+      <div className={`lg:hidden w-full transition-all duration-300 overflow-hidden ${hover ? 'max-h-96' : 'max-h-0'}`}><DropdownMenu items={items} /></div>
       
       {/* dropdown menu  desktop*/}
       {hover && <div onMouseEnter={handleEnter} className='hidden lg:border-t-2 lg:block absolute overflow-hidden top-full left-0 right-0 border-x border-b border-gray-300 rounded-b-lg transition-all duration-300'> <DropdownMenu items={items} /></div>}
